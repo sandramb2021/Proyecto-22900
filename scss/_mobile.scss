@@ -1,0 +1,196 @@
+@import "./variables";
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        .navegacion {
+            .navegacion__lista {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .flex-strech {
+        flex-direction: row;
+    }
+
+    .flex-center {
+        flex-direction: row;
+    }
+
+    /**tablet*/
+    .img__nosotros {
+        height: 300px;
+    }
+
+    .tituloNosotros {
+        font-size: 16px !important;
+    }
+
+    .ProductosLineaContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ProductosLineaContainer--sofa {
+        flex-direction: row !important;
+    }
+
+
+    .produYTextoDetalleContainer {
+        max-height: 1270px;
+        flex-direction: column;
+    }
+
+    .productoDetalleContainer {
+        width: 100%;
+    }
+
+    .DetalleContainer {
+        width: 100%;
+    }
+
+    .contieneProd {
+
+        margin-bottom: 16px;
+
+        .btnDetalle {
+            left: 95px;
+            top: 120px;
+        }
+    }
+
+    .formConsultaRenglonBtn {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 560px) {
+    .flex-strech {
+        flex-direction: column;
+    }
+
+    .flex-center {
+        flex-direction: column;
+    }
+
+    .nombreSeccion {
+
+        font-size: 1.0em !important;
+    }
+
+    .font__col {
+        font-size: 0.8em !important;
+        margin-bottom: 0em !important;
+    }
+
+    .img__nosotros {
+        height: 250px;
+    }
+
+    .tituloPresentacion {
+        font-size: 1.2em;
+    }
+
+    table {
+        h3 {
+            font-size: 12px;
+        }
+
+        thead {
+            th {
+                &:nth-child(1) {
+                    width: 20%;
+                    font-size: 12px;
+                }
+
+                &:nth-child(2) {
+                    width: 30%;
+                    font-size: 12px;
+                }
+
+                &:nth-child(3) {
+                    width: 50%;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        tbody {
+            td {
+                &:nth-child(1) {
+                    width: 20%;
+                    font-size: 10px;
+                    text-align: center;
+                }
+
+                &:nth-child(2) {
+                    width: 30%;
+                    font-size: 10px;
+                    padding-left: 1em;
+                }
+
+                &:nth-child(3) {
+                    width: 50%;
+                    font-size: 10px;
+                    margin-left: 10px;
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+
+    .heroContainer {
+        text-align: left;
+
+
+        .heroSubtitle {
+            width: 300px;
+        }
+    }
+
+    .ProductosLineaContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .Pagos {
+        flex-direction: column;
+    }
+
+    .textoPF {
+        img {
+            width: 50%;
+        }
+    }
+
+    .formConsulta {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+
+    .contieneProd {
+
+        margin-bottom: 16px;
+
+        .btnDetalle {
+            left: 35%;
+            top: 40%;
+        }
+    }
+
+    .formConsultaRenglonBtn {
+        margin-left: 10%;
+
+        .formConsultaBtn {
+            width: 120px;
+        }
+    }
+}

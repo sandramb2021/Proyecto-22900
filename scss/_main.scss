@@ -1,0 +1,571 @@
+@import "./variables";
+
+
+#carrusel__prod__destacados {
+
+    .sliderContainer {
+        position: relative;
+        background-color: $color-base;
+
+        .tituloProdDestacados {
+            font-size: 14px;
+            background: radial-gradient(circle, rgba(255, 127, 80, 0.801) 53%, rgba(180, 6, 24, 1) 100%);
+            color: $color-base;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 15px;
+            left: 0px;
+            backdrop-filter: blur(5px);
+            z-index: 10;
+
+            h2 {
+                animation-iteration-count: infinite;
+                animation-delay: 15s;
+            }
+        }
+
+        #carouselExampleIndicators {
+            .carousel-inner {
+                overflow: hidden;
+                max-width: 900px;
+                max-height: 600px;
+                background-color: $color-base;
+                margin: 0 auto;
+
+                .carousel-item {
+                    img {
+                        max-height: 400px;
+                        object-fit: cover;
+
+                        .imgProducto {
+                            width: 90%;
+                            object-fit: cover;
+                            height: 70%;
+                        }
+
+                        .imgProductoIndiv {
+                            object-fit: contain;
+                            object-position: 50% 50%;
+                            height: 50%;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 50%;
+                            ;
+                        }
+                    }
+
+                    table {
+                        border: 1px solid $color-terciario;
+                        margin: 1em auto;
+                        padding: 5px 5px;
+                        border-collapse: separate;
+                        font-size: 16px;
+                        table-layout: fixed;
+
+                        thead {
+
+                            th {
+                                background-color: $color-terciario;
+                                color: $color-base;
+                                padding: 5px;
+                                font-weight: 200 !important;
+                                text-align: center;
+                            }
+
+                            &:nth-child(1) {
+                                width: 20%;
+                                font-size: 16px;
+                            }
+
+                            &:nth-child(2) {
+                                width: 30%;
+                                font-size: 16px;
+                            }
+
+                            &:nth-child(3) {
+                                width: 50%;
+                                font-size: 16px;
+                            }
+
+
+                        }
+
+
+                        tbody {
+
+                            td {
+                                width: auto;
+                                padding: 10px;
+
+                                .listaMateriales {
+                                    list-style-type: square;
+                                }
+
+
+                                &:nth-child(1) {
+                                    width: 20%;
+                                    font-size: 14px;
+                                    text-align: center;
+                                }
+
+                                &:nth-child(2) {
+                                    width: 30%;
+                                    font-size: 14px;
+                                    padding-left: 2em;
+                                }
+
+                                &:nth-child(3) {
+                                    width: 50%;
+                                    font-size: 14px;
+                                    margin-left: 10px;
+                                    padding-left: 2em;
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+}
+
+//*************flechas de carrousel************
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+//******nosotros
+
+.seccion__titulo {
+    .tituloPresentacion {
+        background-color: $color-secundario;
+        text-align: right;
+        color: $color-base;
+        margin-top: 5px;
+        padding: 5px 15px;
+        z-index: 10;
+        font-size: 1.5em;
+
+        &:hover .move-left {
+            transform: translate(-350px, 0);
+            -webkit-transform: translate(-350px, 0);
+            /** Safari & Chrome **/
+            -o-transform: translate(-350px, 0);
+            /** Opera **/
+            -moz-transform: translate(-350px, 0);
+            /** Firefox **/
+        }
+    }
+
+}
+
+
+.tituloNosotros {
+    /* background-color: tomato;*/
+    background: rgba(255, 127, 80, 0.801);
+    background: radial-gradient(circle, rgba(255, 127, 80, 0.801) 53%, rgba(180, 6, 24, 1) 100%);
+    color: $color-base;
+    text-align: left;
+    width: 100%;
+    /* position: relative;*/
+    top: 0em;
+    left: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+    font-size: 20px !important;
+}
+
+
+.seccion__cuerpo-nosotros {
+
+    .img__nosotros {
+        background-color: $color-base;
+        height: 250px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            margin-left: 0em;
+            margin-right: 0em;
+        }
+    }
+
+    .texto__nosotros {
+
+        /*background-color: $color-base;*/
+        text-align: justify;
+        font-size: 1em;
+        padding: 1em 1em;
+
+        @if $modo-oscuro==true {
+            background-color: $color-noche;
+            /* Tomato de Fondo */
+            color: $color-base;
+        }
+
+        @else if $modo-oscuro==false {
+            background-color: $color-base;
+            /* Blanco de Fondo */
+            color: $color-texto-claro;
+        }
+
+    }
+}
+
+///******preguntas frecuentes***************
+.seccion__cuerpo-pregfrec {
+
+    .textoPF {
+        padding: 1em 1em;
+        font-size: 1em;
+
+        h4 {
+            /*font-weight: bold;*/
+            letter-spacing: 2px;
+            text-decoration: underline;
+            padding-bottom: 1em;
+            padding-top: 1em;
+        }
+
+        span {
+            font-size: 14px;
+            margin: 15px 20px;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .Pagos {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+//******slider individual del producto
+.seccion__slider-producto {
+    .produYTextoDetalleContainer {
+        max-height: 870px;
+        /*display: flex;*/
+        overflow: hidden;
+    }
+
+    .contenedor__detalleProd {
+
+        .detalleProd {
+            /*padding: 0em 1em;*/
+            /* background-color: tomato;*/
+            margin-top: 1em;
+
+            h3 {
+                color: $color-base !important;
+                font-size: 1em;
+                background-color: $color-principal;
+                padding: 10px 20px;
+            }
+        }
+
+        .precio span {
+            border: 1px solid black;
+            text-emphasis: bold;
+            background-color: $color-base;
+            text-align: right;
+            padding: 10px 20px;
+            margin-right: 0em;
+            margin-left: 70%;
+            font-size: 12px;
+        }
+
+        .detalleProdCaract {
+            margin-left: 1em;
+            margin-top: 1em;
+            width: 100%;
+
+            .detalleProd-lista {
+                list-style: square;
+                padding: 1em 1em;
+            }
+
+            .tipoTela {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                padding-top: 10px;
+                margin-bottom: 5px;
+
+                li {
+                    margin-bottom: 5px;
+
+                    .tipoTelaIMG {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//*******Individuales****
+.ProductosContainer {
+    font-size: 14px;
+    margin: 2em;
+
+    .ProductosLineaContainer {
+        /*font-size: 14px;*/
+        /*background-color: $color-base;*/
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 2em auto;
+
+        .contieneProd {
+            width: 280px;
+            /*background-color: $color-base;*/
+            color: #000;
+            overflow: hidden;
+            position: relative;
+            border-style: solid;
+            border-color: $color-principal;
+            border-radius: 15px;
+            border-width: 0.1em;
+            margin-bottom: 2em;
+            /* .contieneProd#producto1 {
+                grid-area: prod1;
+            }
+
+
+            .contieneProd#producto2 {
+                grid-area: prod2;
+            }
+
+            .contieneProd#producto3 {
+                grid-area: prod3;
+            }*/
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 1s;
+            }
+
+            h5 {
+                font-size: 1em;
+                background-color: $color-principal;
+                text-align: center;
+                padding: 0.5em;
+                text-decoration: none;
+                color: $color-base;
+
+                a {
+                    text-decoration: none;
+                    color: $color-base;
+
+
+                }
+
+            }
+
+            #sofa {
+                top: 60px;
+            }
+
+            .contieneProdIMG {
+                overflow: hidden;
+
+                &:hover img {
+                    transform: scale(1.3);
+                }
+            }
+
+
+        }
+    }
+
+}
+
+.precioProducto {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    margin: 40% 40%;
+    padding-top: 1em;
+}
+
+//***************sofas**********************
+/*.SofasContainer {
+    font-size: 14px;
+    display: grid;
+    padding: 1em;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*background-color: $color-base;
+    color: #444;
+    grid-template-areas: "img1 img2 img3"
+        "img4 img5 img6"
+        ". img7 .";
+
+    .contieneSofas {
+        /*background-color: $color-base;
+        color: $color-base;
+
+        border-style: solid;
+        border-color: $color-principal;
+        border-radius: 15px;
+        border-width: 0.1em;
+
+        font-size: 1.2em;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+            transform: translate(5px, 5px);
+        }
+
+        .sofa1 {
+            grid-area: img1;
+        }
+
+        .sofa2 {
+            grid-area: img2;
+        }
+
+        .sofa3 {
+            grid-area: img3;
+        }
+
+        .sofa4 {
+            grid-area: img4;
+        }
+
+        .sofa5 {
+            grid-area: img5;
+        }
+
+        .sofa6 {
+            grid-area: img6;
+        }
+
+        .sofa7 {
+            grid-area: img7;
+        }
+
+        h5,
+        a {
+            /* color: $color-base !important;
+            text-decoration: none !important;
+            font-size: 1em !important;
+        }
+
+        .contieneSofasImg {
+            width: 90%;
+            margin: 0em auto;
+
+
+
+            a {
+                /* text-decoration: none !important;*/
+/*color: $color-base !important;
+                overflow: hidden;
+
+                &:hover img {
+                    width: 100%;
+                    transform: scale(1.3);
+                }
+
+            }
+        }
+
+
+        .Sofa {
+            left: 160px;
+            top: 80px;
+        }
+
+        .contieneSofasNombre {
+            font-size: 1em;
+            background-color: $color-principal;
+            text-align: center;
+            padding: 0.5em;
+            text-decoration: none;
+            color: $color-base;
+        }
+
+    }
+
+}*/
+
+///******contacto***********
+.contenedor__formConsulta {
+    background-image: url("/imagenes/hero3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+
+    .formConsulta {
+        background-color: rgba(255, 255, 255, 0.568);
+        width: 70%;
+        padding: 1em 1em;
+        margin: 20px auto;
+        backdrop-filter: blur(15px);
+
+        .formConsultaRenglon {
+            padding: 10px 10px;
+
+            label {
+                padding-right: 20px;
+            }
+        }
+
+        .formConsultaRenglonBtn {
+            margin-left: 30%;
+
+
+            .formConsultaBtn {
+                background-color: $color-principal;
+                border: none;
+                padding: 0 10px;
+                margin: 0;
+                width: 200px;
+                height: 2.5em;
+                vertical-align: middle;
+                color: $color-base;
+                font-size: 12px !important;
+                transition: all 1s;
+
+                &:hover {
+                    border: solid;
+                    border-color: $color-principal;
+                    border-width: 1px;
+                    background-color: $color-base;
+                    color: black;
+                    cursor: pointer;
+                    transform: translateY(3px);
+                }
+            }
+        }
+
+        textarea {
+            vertical-align: top;
+        }
+
+    }
+}

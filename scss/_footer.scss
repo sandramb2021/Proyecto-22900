@@ -1,0 +1,83 @@
+
+@import "./variables";
+/****footer*****/
+.footerSeccion {
+    color: $color-base;
+    background-color: $color-terciario;
+    font-family: $tipo-fuente-footer;
+    font-size: 0.8em;
+
+    & h3 {
+        padding-top: 1em;
+        padding-left: 1em;
+        margin-bottom: 20px;
+        font-size: 16px !important;
+    }
+
+    .footerDatos {
+        i {
+            font-size: 2em;
+            height: 30px;
+            align-self: center;
+            width: 80px;
+            padding-left: 40px;
+
+            &:hover {
+                color: rgb(80, 78, 78);
+            }
+        }
+
+        a {
+            align-self: center;
+           /* text-decoration: none;
+            color: $color-base;*/
+
+            &:hover {
+                color: rgb(80, 78, 78);
+            }
+        }
+    }
+
+    .mapaContainer {
+        margin-top: 20px;
+
+        .mapa {
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+    .footerCopyR {
+        text-align: end;
+        font-size: 0.8em;
+        margin: 0.5em auto;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        margin-top: 10px;
+
+        li {
+            a {
+                font-size: 2em !important;
+                padding: 0.5em;
+                /*color: $color-base;*/
+                transition: color 0.7s;
+
+                &:hover {
+                    color: rgb(80, 78, 78);
+                }
+            }
+        }
+    }
+
+    .detalleMap {
+        display: block;
+        padding-top: 20px;
+    }
+
+    
+}

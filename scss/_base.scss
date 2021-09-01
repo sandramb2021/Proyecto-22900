@@ -1,0 +1,136 @@
+
+@import "./variables";
+
+//reseteo
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: $tipo-fuente-principal !important;
+    font-size: 1rem;
+    @if $modo-oscuro == true {
+        background-color: $color-noche; /* Tomato de Fondo */
+        color:$color-base;
+    } @else if $modo-oscuro == false {
+        background-color: $color-base; /* Blanco de Fondo */
+        color:$color-texto-claro;
+    }
+    width: 100%;
+    
+}
+
+
+.nombreSeccion {
+    color: $color-principal !important;
+    font-size: 1.2em !important;
+}
+
+
+.btnDetalle {
+    font-size: 14px;
+    background-color: rgba(255, 99, 71, 0.555);
+    backdrop-filter: blur(2px);
+    text-decoration: none;
+    color: $color-base;
+    position: absolute;
+    left: 85px;
+    top: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 1s ease;
+
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.438);
+        backdrop-filter: blur(2px);
+        color: $color-secundario !important;
+    }
+
+    
+}
+
+.font__col {
+    font-size: 1em !important;
+}
+
+a {
+    text-decoration: none !important;
+    @if $modo-oscuro == true {
+        color: $color-texto-oscuro;
+    } @else if $modo-oscuro == false {
+        color: $color-base;
+    }
+}
+
+
+.flex-center, .flex-strech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex-strech {
+    align-items: stretch;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-0{
+    margin-left: 0em;
+    margin-right: 0em;
+} 
+
+.px-0{
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
+.pt-1{
+    padding-top: 1em;
+}
+/* --- Contenedor --- */
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Generar Columnas */
+
+@mixin generarColumnas($breakpoint) {
+
+    @for $index from 1 through 12 {
+        @if $breakpoint == 'mb' {
+            .col-#{$index} {
+                width: 100% / 12 * $index;
+            }
+        } @else {
+            .col-#{$breakpoint}-#{$index} {
+                width: 100% / 12 * $index;
+            }
+        }
+    }
+}
+
+@include generarColumnas('mb');
+
+
+
+@media (min-width: 768px) {
+    @include generarColumnas('md');
+}
+
+@media (min-width: 1024px) {
+    @include generarColumnas('lg');
+}
+
+@media (min-width: 1200px) {
+    @include generarColumnas('xl');
+}

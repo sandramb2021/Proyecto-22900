@@ -485,7 +485,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   display: block;
   /*margin-left: auto;
                             margin-right: auto;*/
-  width: 90%;
+  width: 50%;
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table {
@@ -762,7 +762,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
 }
 
 .contenedor__formConsulta {
-  background-image: url("/imagenes/hero3.jpg");
+  background-image: url("../imagenes/hero3.jpg");
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -860,7 +860,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
     left: 95px;
     top: 120px;
   }
-  .formConsultaRenglonBtn {
+  .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn {
     margin-left: 20%;
   }
 }
@@ -885,36 +885,39 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   .tituloPresentacion {
     font-size: 1.2em;
   }
-  table h3 {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table h3 {
     font-size: 12px;
   }
-  table thead th:nth-child(1) {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead th:nth-child(1) {
     width: 20%;
     font-size: 12px;
   }
-  table thead th:nth-child(2) {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead th:nth-child(2) {
     width: 30%;
     font-size: 12px;
   }
-  table thead th:nth-child(3) {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead th:nth-child(3) {
     width: 50%;
     font-size: 12px;
   }
-  table tbody td:nth-child(1) {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td:nth-child(1) {
     width: 20%;
     font-size: 10px;
     text-align: center;
   }
-  table tbody td:nth-child(2) {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td:nth-child(2) {
     width: 30%;
     font-size: 10px;
-    padding-left: 1em;
+    padding-left: 0.3em;
   }
-  table tbody td:nth-child(3) {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td:nth-child(3) {
     width: 50%;
     font-size: 10px;
-    margin-left: 10px;
-    padding-left: 1em;
+    margin-left: 3px;
+    padding-left: 0.3em;
+  }
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item img {
+    max-height: 200px;
   }
   .heroContainer {
     text-align: left;
@@ -943,10 +946,14 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
     left: 35%;
     top: 40%;
   }
-  .formConsultaRenglonBtn {
-    margin-left: 10%;
+  .contenedor__formConsulta .formConsulta {
+    width: 90%;
   }
-  .formConsultaRenglonBtn .formConsultaBtn {
+  .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn {
+    margin-left: 10%;
+    font-size: 10px;
+  }
+  .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn .formConsultaBtn {
     width: 120px;
   }
 }

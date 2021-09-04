@@ -782,6 +782,11 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
 
 .contenedor__formConsulta .formConsulta .formConsultaRenglon label {
   padding-right: 20px;
+  width: 150px;
+}
+
+.contenedor__formConsulta .formConsulta .formConsultaRenglon .form-check .form-check-label {
+  width: 100%;
 }
 
 .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn {
@@ -954,6 +959,6 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
     font-size: 10px;
   }
   .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn .formConsultaBtn {
-    width: 120px;
+    width: 150px;
   }
 }

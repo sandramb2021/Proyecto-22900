@@ -14,7 +14,6 @@ header {
         background-color: $color-secundario;
         text-align: center;
         color: $color-base !important;
-        /*position: absolute;*/
         font-size: 1rem;
         left: 5em;
         padding: 15px 12px;
@@ -23,8 +22,7 @@ header {
     }
 
     .navbar-toggler {
-        /*color: $color-base !important;*/
-
+        
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
@@ -41,9 +39,7 @@ header {
                 text-decoration: overline;
             }
 
-            /*.nav-link {*/
-            color: $color-base !important;
-            /*font-size: 16px;*/
+            color: $color-base !important;            
             text-transform: uppercase;
         }
     }
@@ -66,32 +62,23 @@ header {
                 flex-direction: row;
                 flex-wrap: wrap;
                 list-style: none;
-                /*display: block;*/
-
+                
                 li {
                     display: inline-block;
                     margin: 0 1em;
 
                     a,
-                    .navegacion__enlace {
-
-                        /*text-decoration: none;
-                    color: $color-base;*/
+                    .navegacion__enlace {                      
                         font-size: 15px;
                         text-transform: uppercase;
 
-
-
                         &:hover {
-                            /*background-color: darkred;*/
                             color: $color-secundario;
                             padding-top: 10px;
                             padding-bottom: 10px;
                             text-decoration: overline !important;
 
                         }
-
-
                     }
                 }
             }
@@ -116,7 +103,4 @@ header {
             font-size: 26px;
             text-align: right;
         }
-
-
-
     }

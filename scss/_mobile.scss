@@ -1,6 +1,6 @@
 @import "./variables";
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {/**tablet*/
 
     .contenedor {
         width: 90%;
@@ -23,7 +23,7 @@
         flex-direction: row;
     }
 
-    /**tablet*/
+    
     .img__nosotros {
         height: 300px;
     }
@@ -76,7 +76,7 @@
 
 }
 
-@media (max-width: 560px) {
+@media (max-width: 560px) {/*mobile*/
     .flex-strech {
         flex-direction: column;
     }
@@ -86,7 +86,6 @@
     }
 
     .nombreSeccion {
-
         font-size: 1.0em !important;
     }
 

@@ -29,9 +29,7 @@
 
         a {
             align-self: center;
-           /* text-decoration: none;
-            color: $color-base;*/
-
+           
             &:hover {
                 color: rgb(80, 78, 78);
             }
@@ -64,7 +62,6 @@
             a {
                 font-size: 2em !important;
                 padding: 0.5em;
-                /*color: $color-base;*/
                 transition: color 0.7s;
 
                 &:hover {
@@ -78,6 +75,4 @@
         display: block;
         padding-top: 20px;
     }
-
-    
 }

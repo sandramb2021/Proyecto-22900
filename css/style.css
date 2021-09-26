@@ -78,6 +78,21 @@ a {
   padding-top: 1em;
 }
 
+/*.w-100{
+    width: 100%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.h-70{
+    height: 70%;
+}
+
+.h-60{
+    height: 60%;
+}*/
 /* --- Contenedor --- */
 .contenedor {
   max-width: 1100px;
@@ -337,11 +352,14 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   background-image: url("../imagenes/hero7.jpg");
   background-attachment: fixed;
   background-size: cover;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2em;
 }
 
-.heroContainer p {
+.heroContainer span {
   font-size: 30px;
-  margin-top: 2em;
+  margin-left: 20%;
   text-align: center;
 }
 
@@ -359,11 +377,12 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   font-size: 0.8em;
 }
 
-.footerSeccion h3 {
-  padding-top: 1em;
+.footerSeccion .footerSeccion-titulo {
+  display: block;
+  padding-top: 1em !important;
   padding-left: 1em;
   margin-bottom: 20px;
-  font-size: 16px !important;
+  font-size: 1em !important;
 }
 
 .footerSeccion .footerDatos i {
@@ -430,7 +449,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
 }
 
 #carrusel__prod__destacados .sliderContainer .tituloProdDestacados {
-  font-size: 14px;
+  /*font-size: 14px;*/
   background: radial-gradient(circle, rgba(255, 127, 80, 0.801) 53%, #b40618 100%);
   color: white;
   text-align: center;
@@ -442,9 +461,10 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   z-index: 10;
 }
 
-#carrusel__prod__destacados .sliderContainer .tituloProdDestacados h2 {
+#carrusel__prod__destacados .sliderContainer .tituloProdDestacados h1 {
   animation-iteration-count: infinite;
   animation-delay: 15s;
+  font-size: 2em;
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner {
@@ -459,11 +479,10 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   max-height: 400px;
   object-fit: cover;
   margin: 0 auto;
-}
-
-#carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item img .imgProducto {
-  width: 90%;
-  height: 70%;
+  /*.imgProducto {
+                                                    
+                            height: 70%;
+                        }*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table {
@@ -471,7 +490,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   margin: 1em auto;
   padding: 5px 5px;
   border-collapse: separate;
-  font-size: 16px;
+  /*font-size: 16px;*/
   table-layout: fixed;
 }
 
@@ -485,17 +504,17 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead:nth-child(1) {
   width: 20%;
-  font-size: 16px;
+  /*font-size: 16px;*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead:nth-child(2) {
   width: 30%;
-  font-size: 16px;
+  /*font-size: 16px;*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead:nth-child(3) {
   width: 50%;
-  font-size: 16px;
+  /*font-size: 16px;*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td {
@@ -509,8 +528,11 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td:nth-child(1) {
   width: 20%;
-  font-size: 14px;
   text-align: center;
+}
+
+#carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td:nth-child(1) h2 {
+  font-size: 1.5em;
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td:nth-child(2) {
@@ -596,7 +618,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   font-size: 1em;
 }
 
-.seccion__cuerpo-pregfrec .textoPF h4 {
+.seccion__cuerpo-pregfrec .textoPF h3 {
   letter-spacing: 2px;
   text-decoration: underline;
   padding-bottom: 1em;
@@ -626,7 +648,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   margin-top: 1em;
 }
 
-.seccion__slider-producto .contenedor__detalleProd .detalleProd h3 {
+.seccion__slider-producto .contenedor__detalleProd .detalleProd h2 {
   color: white !important;
   font-size: 1em;
   background-color: tomato;
@@ -705,7 +727,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   transition: all 1s;
 }
 
-.ProductosContainer .ProductosLineaContainer .contieneProd h4 {
+.ProductosContainer .ProductosLineaContainer .contieneProd h2 {
   font-size: 1em;
   background-color: tomato;
   text-align: center;
@@ -714,7 +736,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   color: white;
 }
 
-.ProductosContainer .ProductosLineaContainer .contieneProd h4 a {
+.ProductosContainer .ProductosLineaContainer .contieneProd h2 a {
   text-decoration: none;
   color: white;
 }
@@ -824,12 +846,12 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   .tituloNosotros {
     font-size: 16px !important;
   }
+  #ProductosLineaContainer--sofa {
+    flex-direction: row !important;
+  }
   .ProductosLineaContainer {
     flex-direction: column;
     align-items: center;
-  }
-  #ProductosLineaContainer--sofa {
-    flex-direction: row !important;
   }
   .produYTextoDetalleContainer {
     max-height: 1270px;
@@ -872,7 +894,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
     height: 250px;
   }
   .tituloPresentacion {
-    font-size: 1.2em;
+    font-size: 1.2em !important;
   }
   #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table h3 {
     font-size: 12px;
@@ -908,6 +930,9 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item img {
     max-height: 200px;
   }
+  #carrusel__prod__destacados .sliderContainer .tituloProdDestacados h1 {
+    font-size: 1.5em;
+  }
   .heroContainer {
     text-align: left;
   }
@@ -917,6 +942,9 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   .ProductosLineaContainer {
     flex-direction: column;
     align-items: center;
+  }
+  #ProductosLineaContainer--sofa {
+    flex-direction: column !important;
   }
   .Pagos {
     flex-direction: column;
@@ -943,6 +971,6 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
     font-size: 10px;
   }
   .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn .formConsultaBtn {
-    width: 150px;
+    width: 120px;
   }
 }

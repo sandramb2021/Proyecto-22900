@@ -24,12 +24,10 @@ body {
     
 }
 
-
 .nombreSeccion {
     color: $color-principal !important;
     font-size: 1.2em !important;
 }
-
 
 .btnDetalle {
     font-size: 14px;
@@ -44,14 +42,11 @@ body {
     border-radius: 10px;
     transition: all 1s ease;
 
-
     &:hover {
         background: rgba(255, 255, 255, 0.438);
         backdrop-filter: blur(2px);
         color: $color-secundario !important;
-    }
-
-    
+    }   
 }
 
 .font__col {
@@ -96,6 +91,22 @@ a {
 .pt-1{
     padding-top: 1em;
 }
+
+/*.w-100{
+    width: 100%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.h-70{
+    height: 70%;
+}
+
+.h-60{
+    height: 60%;
+}*/
 /* --- Contenedor --- */
 
 .contenedor {

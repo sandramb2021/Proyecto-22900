@@ -7,11 +7,12 @@
     font-family: $tipo-fuente-footer;
     font-size: 0.8em;
 
-    & h3 {
-        padding-top: 1em;
+    .footerSeccion-titulo {
+        display: block;
+        padding-top: 1em !important;
         padding-left: 1em;
         margin-bottom: 20px;
-        font-size: 16px !important;
+        font-size: 1em !important;
     }
 
     .footerDatos {

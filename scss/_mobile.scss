@@ -1,6 +1,7 @@
 @import "./variables";
 
-@media (max-width: 768px) {/**tablet*/
+@media (max-width: 768px) {
+    /**tablet*/
 
     .contenedor {
         width: 90%;
@@ -23,7 +24,7 @@
         flex-direction: row;
     }
 
-    
+
     .img__nosotros {
         height: 300px;
     }
@@ -32,13 +33,13 @@
         font-size: 16px !important;
     }
 
+    #ProductosLineaContainer--sofa {
+        flex-direction: row !important;
+    }
+
     .ProductosLineaContainer {
         flex-direction: column;
         align-items: center;
-    }
-
-    #ProductosLineaContainer--sofa {
-        flex-direction: row !important;
     }
 
 
@@ -76,7 +77,9 @@
 
 }
 
-@media (max-width: 560px) {/*mobile*/
+@media (max-width: 560px) {
+
+    /*mobile*/
     .flex-strech {
         flex-direction: column;
     }
@@ -99,7 +102,7 @@
     }
 
     .tituloPresentacion {
-        font-size: 1.2em;
+        font-size: 1.2em !important;
     }
 
     #carrusel__prod__destacados {
@@ -159,9 +162,15 @@
 
                         img {
                             max-height: 200px;
-                            
+
                         }
                     }
+                }
+            }
+
+            .tituloProdDestacados {
+                h1 {
+                    font-size: 1.5em;
                 }
             }
         }
@@ -169,7 +178,6 @@
 
     .heroContainer {
         text-align: left;
-
 
         .heroSubtitle {
             width: 300px;
@@ -181,6 +189,9 @@
         align-items: center;
     }
 
+    #ProductosLineaContainer--sofa {
+        flex-direction: column !important;
+    }
 
     .Pagos {
         flex-direction: column;
@@ -218,7 +229,7 @@
                 font-size: 10px;
 
                 .formConsultaBtn {
-                    width: 150px;
+                    width: 120px;
                 }
             }
         }

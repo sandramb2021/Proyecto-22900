@@ -39,13 +39,6 @@
                         max-height: 400px;
                         object-fit: cover;
                         margin: 0 auto;
-
-                        /*.imgProducto {
-                                                    
-                            height: 70%;
-                        }*/
-
-                       
                     }
 
                     table {
@@ -53,7 +46,6 @@
                         margin: 1em auto;
                         padding: 5px 5px;
                         border-collapse: separate;
-                        /*font-size: 16px;*/
                         table-layout: fixed;
 
                         thead {
@@ -68,20 +60,15 @@
 
                             &:nth-child(1) {
                                 width: 20%;
-                                /*font-size: 16px;*/
                             }
 
                             &:nth-child(2) {
                                 width: 30%;
-                                /*font-size: 16px;*/
                             }
 
                             &:nth-child(3) {
                                 width: 50%;
-                                /*font-size: 16px;*/
                             }
-
-
                         }
 
 

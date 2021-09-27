@@ -78,21 +78,6 @@ a {
   padding-top: 1em;
 }
 
-/*.w-100{
-    width: 100%;
-}
-
-.w-90{
-    width: 90%;
-}
-
-.h-70{
-    height: 70%;
-}
-
-.h-60{
-    height: 60%;
-}*/
 /* --- Contenedor --- */
 .contenedor {
   max-width: 1100px;
@@ -272,13 +257,6 @@ a {
 }
 
 header {
-  /*.navbar-toggler {
-        
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 100 100 46'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-
-    }*/
   /**** para adecuar sin bootstrap*/
 }
 
@@ -348,7 +326,7 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
 
 .heroContainer {
   width: 100%;
-  padding: 2em;
+  padding: 2em 0em;
   background-image: url("../imagenes/hero7.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -479,10 +457,6 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   max-height: 400px;
   object-fit: cover;
   margin: 0 auto;
-  /*.imgProducto {
-                                                    
-                            height: 70%;
-                        }*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table {
@@ -490,7 +464,6 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   margin: 1em auto;
   padding: 5px 5px;
   border-collapse: separate;
-  /*font-size: 16px;*/
   table-layout: fixed;
 }
 
@@ -504,17 +477,14 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead:nth-child(1) {
   width: 20%;
-  /*font-size: 16px;*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead:nth-child(2) {
   width: 30%;
-  /*font-size: 16px;*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead:nth-child(3) {
   width: 50%;
-  /*font-size: 16px;*/
 }
 
 #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table tbody td {
@@ -840,6 +810,9 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   .flex-center {
     flex-direction: row;
   }
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item img {
+    max-height: 200px;
+  }
   .img__nosotros {
     height: 300px;
   }
@@ -896,7 +869,14 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
   .tituloPresentacion {
     font-size: 1.2em !important;
   }
-  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table h3 {
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item {
+    /*
+                        img {
+                            max-height: 200px;
+
+                        }*/
+  }
+  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table h2 {
     font-size: 12px;
   }
   #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item table thead th:nth-child(1) {
@@ -926,9 +906,6 @@ header .navegacion__container .navegacion .navegacion__lista li .navegacion__enl
     font-size: 10px;
     margin-left: 3px;
     padding-left: 0.3em;
-  }
-  #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item img {
-    max-height: 200px;
   }
   #carrusel__prod__destacados .sliderContainer .tituloProdDestacados h1 {
     font-size: 1.5em;

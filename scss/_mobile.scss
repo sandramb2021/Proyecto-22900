@@ -24,6 +24,21 @@
         flex-direction: row;
     }
 
+    #carrusel__prod__destacados {
+        .sliderContainer {
+            #carouselExampleIndicators {
+                .carousel-inner {
+                    .carousel-item {
+                        
+                        img {
+                            max-height: 200px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .img__nosotros {
         height: 300px;
@@ -106,13 +121,12 @@
     }
 
     #carrusel__prod__destacados {
-
         .sliderContainer {
             #carouselExampleIndicators {
                 .carousel-inner {
                     .carousel-item {
                         table {
-                            h3 {
+                            h2 {
                                 font-size: 12px;
                             }
 
@@ -159,11 +173,11 @@
                             }
                         }
 
-
+/*
                         img {
                             max-height: 200px;
 
-                        }
+                        }*/
                     }
                 }
             }

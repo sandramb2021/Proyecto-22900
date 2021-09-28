@@ -35,46 +35,7 @@ header {
         }
     }
 
-    /**** para adecuar sin bootstrap*/
-    .navegacion__container {
-        background-color: rgba(255, 99, 71, 0.555);
-        width: 100%;
-        padding: 1em;
-        position: fixed;
-        backdrop-filter: blur(8px);
-        box-shadow: 0 0 10px black;
-
-        .navegacion {
-
-            width: 100%;
-            margin: 0 0 0 30%;
-
-            .navegacion__lista {
-                flex-direction: row;
-                flex-wrap: wrap;
-                list-style: none;
-                
-                li {
-                    display: inline-block;
-                    margin: 0 1em;
-
-                    a,
-                    .navegacion__enlace {                      
-                        font-size: 15px;
-                        text-transform: uppercase;
-
-                        &:hover {
-                            color: $color-secundario;
-                            padding-top: 10px;
-                            padding-bottom: 10px;
-                            text-decoration: overline !important;
-
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
 }
     .heroContainer {
         width: 100%;

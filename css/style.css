@@ -123,7 +123,6 @@ header .nav-item .nav-link:hover {
 }
 
 .heroContainer {
-  width: 100%;
   padding: 2em 0em;
   background-image: url("../imagenes/hero7.jpg");
   background-attachment: fixed;
@@ -143,6 +142,7 @@ header .nav-item .nav-link:hover {
   color: #3d3b3b;
   font-size: 26px;
   text-align: right;
+  margin-right: 10%;
 }
 
 /****footer*****/
@@ -535,6 +535,9 @@ header .nav-item .nav-link:hover {
   #carrusel__prod__destacados .sliderContainer #carouselExampleIndicators .carousel-inner .carousel-item img {
     max-height: 200px;
   }
+  #carrusel__prod__destacados .sliderContainer .tituloProdDestacados {
+    max-width: 95%;
+  }
   .img__nosotros {
     height: 300px;
   }
@@ -566,7 +569,17 @@ header .nav-item .nav-link:hover {
     top: 120px;
   }
   .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn {
-    margin-left: 20%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 658px) {
+  /**celular acostado*/
+  .contenedor__formConsulta .formConsulta {
+    width: 80%;
+  }
+  .contenedor__formConsulta .formConsulta .formConsultaRenglonBtn .formConsultaBtn {
+    width: 130px;
   }
 }
 
@@ -623,7 +636,7 @@ header .nav-item .nav-link:hover {
     padding-left: 0.3em;
   }
   #carrusel__prod__destacados .sliderContainer .tituloProdDestacados {
-    max-width: 400px;
+    max-width: 95%;
   }
   #carrusel__prod__destacados .sliderContainer .tituloProdDestacados h1 {
     font-size: 1.5em;
@@ -631,8 +644,13 @@ header .nav-item .nav-link:hover {
   .heroContainer {
     text-align: left;
   }
+  .heroContainer span {
+    font-size: 26px;
+    margin-left: 5%;
+  }
   .heroContainer .heroSubtitle {
-    width: 300px;
+    width: 90%;
+    font-size: 22px;
   }
   .ProductosLineaContainer {
     flex-direction: column;

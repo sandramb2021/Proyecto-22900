@@ -30,32 +30,34 @@ header {
                 text-decoration: overline;
             }
 
-            color: $color-base !important;            
+            color: $color-base !important;
             text-transform: uppercase;
         }
     }
 
-    
-}
-    .heroContainer {
-        width: 100%;
-        padding: 2em 0em;
-        background-image: url("../imagenes/hero7.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        font-weight: 500;
-        line-height: 1.2;
-        margin-top: 2em;
 
-        span {
-            font-size: 30px;
-            margin-left: 20%;
-            text-align: center;                
-        }
-        
-        .heroSubtitle {
-            color: rgb(61, 59, 59);
-            font-size: 26px;
-            text-align: right;
-        }
+}
+
+.heroContainer {
+
+    padding: 2em 0em;
+    background-image: url("../imagenes/hero7.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 2em;
+
+    span {
+        font-size: 30px;
+        margin-left: 20%;
+        text-align: center;
     }
+
+    .heroSubtitle {
+        color: rgb(61, 59, 59);
+        font-size: 26px;
+        text-align: right;
+        margin-right: 10%;
+    }
+}

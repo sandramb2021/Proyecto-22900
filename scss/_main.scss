@@ -6,16 +6,18 @@
     .sliderContainer {
         position: relative;
         background-color: $color-base;
+        /*display: block;*/
+        margin-left: auto;
+        margin-right: auto;
 
         .tituloProdDestacados {
-            /*font-size: 14px;*/
+            
             background: radial-gradient(circle, rgba(255, 127, 80, 0.801) 53%, rgba(180, 6, 24, 1) 100%);
             color: $color-base;
-            text-align: center;
-            width: 100%;
+            /*text-align: center;
+            width: 100%;*/
             position: absolute;
             top: 15px;
-            left: 0px;
             backdrop-filter: blur(5px);
             z-index: 10;
 
@@ -57,7 +59,7 @@
                                 font-weight: 200 !important;
                                 text-align: center;
                             }
-
+/*
                             &:nth-child(1) {
                                 width: 20%;
                             }
@@ -68,7 +70,7 @@
 
                             &:nth-child(3) {
                                 width: 50%;
-                            }
+                            }*/
                         }
 
 
@@ -84,7 +86,7 @@
 
 
                                 &:nth-child(1) {
-                                    width: 20%;
+                                    /*width: 20%;*/
                                     text-align: center;
                                     & h2{
                                         font-size: 1.5em;
@@ -92,16 +94,16 @@
                                 }
 
                                 &:nth-child(2) {
-                                    width: 30%;
+                                    /*width: 30%;*/
                                     font-size: 14px;
-                                    padding-left: 2em;
+                                    /*padding-left: 2em;*/
                                 }
 
                                 &:nth-child(3) {
-                                    width: 50%;
+                                    /*width: 50%;*/
                                     font-size: 14px;
                                     margin-left: 10px;
-                                    padding-left: 2em;
+                                    /*padding-left: 2em;*/
                                 }
 
                             }
@@ -156,8 +158,8 @@
     background: rgba(255, 127, 80, 0.801);
     background: radial-gradient(circle, rgba(255, 127, 80, 0.801) 53%, rgba(180, 6, 24, 1) 100%);
     color: $color-base;
-    text-align: left;
-    width: 100%;
+    /*text-align: left;
+    width: 100%;*/
     top: 0em;
     left: 0px;
     padding-left: 10px;
@@ -176,18 +178,18 @@
 
         img {
             object-fit: cover;
-            width: 100%;
+            /*width: 100%;
             height: 100%;
             margin-left: 0em;
-            margin-right: 0em;
+            margin-right: 0em;*/
         }
     }
 
     .texto__nosotros {
 
-        text-align: justify;
+        /*text-align: justify;
         font-size: 1em;
-        padding: 1em 1em;
+        padding: 1em 1em;*/
 
         @if $modo-oscuro==true {
             background-color: $color-noche;
@@ -208,8 +210,8 @@
 .seccion__cuerpo-pregfrec {
 
     .textoPF {
-        padding: 1em 1em;
-        font-size: 1em;
+        /*padding: 1em 1em;*/
+        /*font-size: 1em;*/
 
         h3 {
             
@@ -224,33 +226,30 @@
             margin: 15px 20px;
         }
 
-        img {
+       /* img {
             width: 80%;
-        }
+        }*/
     }
 
     .Pagos {
-        display: flex;
-        justify-content: space-around;
+        /*display: flex;
+        justify-content: space-around;*/
     }
 }
 
 //******slider individual del producto
 .seccion__slider-producto {
     .produYTextoDetalleContainer {
-        max-height: 870px;
+        max-height: 850px;
         overflow: hidden;
     }
 
     .contenedor__detalleProd {
-
+       
         .detalleProd {
-            margin-top: 1em;
+            /*margin-top: 1em;*/
 
             h2 {
-                color: $color-base !important;
-                font-size: 1em;
-                background-color: $color-principal;
                 padding: 10px 20px;
             }
         }
@@ -261,30 +260,32 @@
             background-color: $color-base;
             text-align: right;
             padding: 10px 20px;
-            margin-right: 0em;
+            /*margin-right: 0em;*/
             margin-left: 70%;
             font-size: 12px;
         }
 
+        
         .detalleProdCaract {
             margin-left: 1em;
-            margin-top: 1em;
-            width: 100%;
+            /*margin-top: 1em;         
+            width: 90%;*/
 
             .detalleProd-lista {
                 list-style: square;
                 padding: 1em 1em;
+                /*width: 100%;*/
             }
 
             .tipoTela {
                 list-style: none;
-                display: flex;
+                /*display: flex;*/
                 flex-direction: column;
                 align-items: flex-start;
-                width: 100%;
+                /*width: 100%;
                 padding-top: 10px;
                 margin-bottom: 5px;
-
+*/
                 li {
                     margin-bottom: 5px;
 
@@ -322,25 +323,20 @@
             margin-bottom: 2em;
             
             img {
-                width: 100%;
-                height: 100%;
+                /*width: 100%;
+                height: 100%;*/
                 object-fit: cover;
                 transition: all 1s;
             }
 
-            h2 {
-                font-size: 1em;
-                background-color: $color-principal;
+            h2 {                
                 text-align: center;
-                padding: 0.5em;
+                /*padding: 0.5em;*/
                 text-decoration: none;
-                color: $color-base;
 
                 a {
                     text-decoration: none;
                     color: $color-base;
-
-
                 }
 
             }
@@ -361,8 +357,6 @@
                     padding-bottom: 44px;
                 }
             }
-
-
         }
     }
 
@@ -370,10 +364,9 @@
 
 .precioProducto {
     color: black;
-    font-size: 1em;
     text-align: center;
     margin: 40% 40%;
-    padding-top: 1em;
+    /*padding-top: 1em;*/
 }
 
 ///******contacto***********
@@ -381,39 +374,29 @@
     background-image: url("../imagenes/hero3.jpg");
     background-attachment: fixed;
     background-size: cover;
-    width: 100%;
+    /*width: 100%;*/
 
     .formConsulta {
         background-color: rgba(255, 255, 255, 0.568);
-        width: 70%;
-        padding: 1em 1em;
         margin: 20px auto;
         backdrop-filter: blur(15px);
+        width: 70%;
 
         .formConsultaRenglon {
-            padding: 10px 10px;
-
             label {
                 padding-right: 20px;
                 width: 150px;
             }
-            .form-check{
-                .form-check-label{
-                    width: 100%;
-                }
-            }
-            
         }
 
         .formConsultaRenglonBtn {
             margin-left: 30%;
 
-
             .formConsultaBtn {
                 background-color: $color-principal;
-                border: none;
-                padding: 0 10px;
-                margin: 0;
+                /*border: none;*/
+                /*padding: 0 10px;
+                margin: 0;*/
                 width: 200px;
                 height: 2.5em;
                 vertical-align: middle;
